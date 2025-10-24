@@ -32,4 +32,8 @@ public class StundentController {
     public void deleteStudent( @PathVariable long id){
         studentService.deleteStudent(id);
     }
+    @DeleteMapping("deleteAllStudent")
+    public void deleteAllStudent() {
+    studentService.deleteAllStudent();
+    }
 }
